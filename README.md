@@ -43,15 +43,15 @@ A production-ready implementation of a Retrieval-Augmented Generation (RAG) pipe
 ### Option 1: Local Installation
 
 ```bash
-# Clone the repository
+
 git clone https://github.com/workprinond/semantic-rag-search.git
 cd semantic-rag-search
 
-# Create virtual environment (Python 3.10 recommended)
-python3.10 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
+python3.10 -m venv venv
+source venv/bin/activate  
+
+
 pip install --upgrade pip
 pip install -r requirements.txt
 
