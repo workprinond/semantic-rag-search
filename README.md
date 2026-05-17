@@ -7,7 +7,7 @@ cat > README.md << 'EOF'
 
 A production-ready implementation of a Retrieval-Augmented Generation (RAG) pipeline with comprehensive benchmarking capabilities for comparing retrieval strategies.
 
-## 📊 Benchmark Results
+## Benchmark Results
 
 ### Strategy Comparison: Raw Vector Search vs AI-Enhanced Retrieval
 
@@ -19,7 +19,7 @@ A production-ready implementation of a Retrieval-Augmented Generation (RAG) pipe
 
 **Conclusion**: AI-Enhanced retrieval consistently outperforms raw vector search by expanding queries with relevant technical terminology, better capturing user intent, and providing more comprehensive context for semantic matching.
 
-## 🚀 Features
+##  Features
 
 - **Local embedding generation** using sentence-transformers (all-MiniLM-L6-v2)
 - **FAISS-based vector database** for efficient similarity search
@@ -31,14 +31,14 @@ A production-ready implementation of a Retrieval-Augmented Generation (RAG) pipe
 - **Full pytest test suite** with 93%+ coverage
 - **Docker support** for easy deployment
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Python**: 3.10 or 3.11 (3.13 not supported yet)
 - **Memory**: 4GB RAM minimum (8GB recommended)
 - **Disk**: 2GB free space
 - **Optional**: Docker (for containerized execution)
 
-## 🔧 Installation
+##  Installation
 
 ### Option 1: Local Installation
 

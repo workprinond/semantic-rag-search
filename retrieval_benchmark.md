@@ -31,7 +31,7 @@
 ### 📈 Performance Summary
 - **Strategy A Average Score:** 0.7095
 - **Strategy B Average Score:** 0.7631
-- **Improvement:** **+7.6%** ✅
+- **Improvement:** **+7.6%** 
 
 ---
 
@@ -56,7 +56,7 @@
 ### 📈 Performance Summary
 - **Strategy A Average Score:** 0.6441
 - **Strategy B Average Score:** 0.6937
-- **Improvement:** **+7.7%** ✅
+- **Improvement:** **+7.7%** 
 
 ---
 
@@ -81,7 +81,7 @@
 ### 📈 Performance Summary
 - **Strategy A Average Score:** 0.7330
 - **Strategy B Average Score:** 0.7508
-- **Improvement:** **+2.4%** ✅
+- **Improvement:** **+2.4%** 
 
 ---
 
@@ -95,7 +95,7 @@
 
 ## 🎯 Key Findings
 
-✅ **AI-Enhanced retrieval consistently outperforms raw vector search**
+**AI-Enhanced retrieval consistently outperforms raw vector search**
 - Average improvement of **+5.9%** across all queries
 - Better context understanding through query expansion
 - Higher relevance scores with consistent improvement

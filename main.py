@@ -65,18 +65,17 @@ def main():
     
     benchmark_results = benchmarker.run_benchmark(test_queries, k=3)
     
-    # Generate both console (text) and markdown reports
+
     console_report = benchmarker.generate_report(benchmark_results, format_type="text")
     markdown_report = benchmarker.generate_report(benchmark_results, format_type="markdown")
     
     print("\n" + console_report)
     
-    # Save markdown report for GitHub
+  
     with open("retrieval_benchmark.md", "w") as f:
         f.write(markdown_report)
     logger.info("Markdown report saved to retrieval_benchmark.md")
-    
-    # Save JSON results
+   
     benchmarker.save_report(benchmark_results, "benchmark_results.json")
     
     return benchmark_results
