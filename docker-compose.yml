@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  semantic-rag:
+    build: .
+    container_name: semantic-rag-system
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./results:/app/results
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+    command: python main.py
+    restart: unless-stopped
+
+  semantic-rag-test:
+    build: .
+    container_name: semantic-rag-test
+    volumes:
+      - ./data:/app/data
+    command: pytest tests/ -v
+    depends_on:
+      - semantic-rag
+
+  semantic-rag-dev:
+    build: .
+    container_name: semantic-rag-dev
+    volumes:
+      - .:/app
+    command: tail -f /dev/null
+    stdin_open: true
+    tty: true

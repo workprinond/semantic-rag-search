@@ -1,0 +1,51 @@
+# Virtual environments
+venv/
+venv310/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Data files (keep structure but not large files)
+*.faiss
+*.pkl
+*.log
+
+# Backup
+backup_*/
+*.backup
+
+# Output files (will be generated)
+output/
+results/
+
+# Environment files
+.env
+.env.local
