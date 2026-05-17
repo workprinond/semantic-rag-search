@@ -1,6 +1,4 @@
-#!/bin/bash
 
-# Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -11,13 +9,13 @@ echo -e "${BLUE}========================================${NC}"
 echo -e "${BLUE}Semantic RAG - Docker Runner${NC}"
 echo -e "${BLUE}========================================${NC}"
 
-# Check if Docker is installed
+
 if ! command -v docker &> /dev/null; then
     echo -e "${RED}❌ Docker is not installed. Please install Docker first.${NC}"
     exit 1
 fi
 
-# Check if Docker Compose is installed
+
 if ! command -v docker-compose &> /dev/null; then
     echo -e "${YELLOW}⚠️  Docker Compose not found. Using docker commands instead.${NC}"
     USE_COMPOSE=false
@@ -25,7 +23,7 @@ else
     USE_COMPOSE=true
 fi
 
-# Function to build and run with docker-compose
+
 run_with_compose() {
     echo -e "${GREEN}📦 Building Docker image...${NC}"
     docker-compose build
@@ -34,7 +32,7 @@ run_with_compose() {
     docker-compose up semantic-rag
 }
 
-# Function to build and run with docker
+
 run_with_docker() {
     echo -e "${GREEN}📦 Building Docker image...${NC}"
     docker build -t semantic-rag:latest .
@@ -47,7 +45,7 @@ run_with_docker() {
         semantic-rag:latest
 }
 
-# Function to run tests
+
 run_tests() {
     echo -e "${GREEN}🧪 Running tests...${NC}"
     if [ "$USE_COMPOSE" = true ]; then
@@ -59,7 +57,7 @@ run_tests() {
     fi
 }
 
-# Function to run dev environment
+
 run_dev() {
     echo -e "${GREEN}💻 Starting development environment...${NC}"
     if [ "$USE_COMPOSE" = true ]; then
